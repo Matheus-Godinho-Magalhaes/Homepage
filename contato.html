@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato - Matheus Godinho</title>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formFeedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matheus Godinho. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Previne o envio do formulário
+            document.getElementById("formFeedback").innerText = "Obrigado pela sua mensagem!";
+            document.getElementById("contactForm").reset(); // Limpa o formulário
+        });
+    </script>
+</body>
+</html>
