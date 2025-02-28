@@ -56,9 +56,7 @@ This project is a personal homepage developed as part of Harvard University's **
 - Integrate Bootstrap for additional components like carousels or cards.
 - Add CSS animations to enhance the user experience.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
